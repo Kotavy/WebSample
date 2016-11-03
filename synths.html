@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <h1><a href="index.html">Youth Theory</a></h1>
+        <ul>
+          <li><a href="midi.html">MIDI</a></li>
+          <li><a href="synths.html">Synths</a></li>
+          <li><a href="noises.html">Noises</a></li>
+        </ul>
+
+        <div id="theme">
+          <ul>
+            <li class="theme day"><button>Day</button></li>
+            <li class="theme">|</li>
+            <li class="theme night"><button>Night</button></li>
+          </ul>
+        </div> <!-- close #theme -->
+      </div> <!-- close #nav -->
+
+      <div id="content">
+        <div class="col1">
+          <img src="images/moog.png" class="project_image" width="300" height="300" alt="Moog next to his synthesizers">
+          <h2>Synthesizers</h2>
+          <p>While MIDI wasn't created until the 80's, people were making electronic music back in the 1960's. Robert Moog and Donald Buchla, on opposite coasts of the US both created a unique means of producing sounds that had never been heard before. Synthesizers harnessed the power of electric currents to produce waveforms based on variable voltages. These massive units, connected to keyboards, used patch cables to route the voltage between modules such as oscillators--which produce the base tone--and effects like delays, reverbs, and equalizers to produce these wild new noises. Combine multiple waves and the results get exponentially more awesome, often producing richer sounds than what most electronic music features today.</p>
+        </div> <!-- close .col1 -->
+
+        <div class="col2">
+          <img src="images/max4live.png" class="project_image" width="300" height="300" alt="Max4Live Object Oriented Programming environment">
+          <h2>Max</h2>
+          <p>Max is an object oriented graphical programming environment created by the Cycling '74 studio to craft new synthesizers and effects from the comfort of a computer. It's the modern version of the bulky synthesizers pioneered by Moog and Buchla, patch cables and all. Partnered with Ableton Live as Max4Live, this powerhouse provides exact control over a modern musician's sound design, freeing them from the cheesy build-it synth sounds that every new producer is stuck with. It can easily function as a whole new instrument or provide a hand-crafted effect module, re-routing whatever MIDI data comes its way. However, just as with the tireless battle between digital and vinyl, people still create music on old cabinet synths to get exactly the sound they want.</p>
+        </div> <!-- close .col2 -->
+
+        <img src="images/zedsdead.png" class="wide_image" width="400" height="300" alt="Zeds Dead performing at Red Rocks Amphitheater">
+      </div> <!-- close #content -->
+
+      <hr>
+
+      <div id="footer">
+        <p class="nobg"><a href="../index.html" id="footlink">Assignments Home</a></p>
+      </div> <!-- close #footer -->
+    </div> <!-- close #container -->
+
+    <script src="scripts/jquery-1.12.3.min.js"></script>
+    <script src="scripts/retina.min.js"></script>
+    <script src="scripts/yt-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <h1><a href="index.html">Youth Theory</a></h1>
+        <ul>
+          <li><a href="midi.html">MIDI</a></li>
+          <li><a href="synths.html">Synths</a></li>
+          <li><a href="noises.html">Noises</a></li>
+        </ul>
+
+        <div id="theme">
+          <ul>
+            <li class="theme day"><button>Day</button></li>
+            <li class="theme">|</li>
+            <li class="theme night"><button>Night</button></li>
+          </ul>
+        </div> <!-- close #theme -->
+      </div> <!-- close #nav -->
+
+      <div id="content">
+        <div class="col1">
+          <img src="images/genres.png" class="project_image" width="300" height="300" alt="Genre Evolution Chart">
+          <h2>Genres?</h2>
+          <p>In this modern day, with the tools to create entire orchestral compositions a mere download away, it seems like everybody we know is trying to shape the next big sound. The electronic landscape (soundscape?) is changing so rapidly that the once cookie-cutter genres like House, Techno, and DnB are being mashed together in extravagent new ways to keep audiences on their toes. Personally I've been most inspired by classic progessive trance tracks lately, due to the way these artists take their time with the layering of sonic elements that really make the listener slow down and get lost in the experience. Post-Dub and UK Garage sounds are some of the more interesting "new genres" I've been following as well.</p>
+        </div> <!-- close .col1 -->
+
+        <div class="col2">
+          <img src="images/daftpunk.png" class="project_image" width="300" height="300" alt="Futuristic Daft Punk">
+          <h2>Future</h2>
+          <p>So what happens next? Electronic music has seen a tremendous rise in popularity in the past years, with huge demand for producers to incorporate these synth sounds and effects into any and all genres of music. It's a wonderful time to be part of this creative force, one where the accessbility of the tools--and thanks to the internet, accessibility to the new music--is actually forcing the entire music industry to shift its practices in order to keep up. Now that people understand more of what's actually going on behind a DJ deck, many audience members are asking to see more of a performance. As the digital waves becomes ubiquitous, expect to see more MIDI instruments on stage with producers upping their efforts to stand out from their peers and really make it a night to remember.</p>
+        </div> <!-- close .col2 -->
+
+        <img src="images/ableton-setup.png" class="wide_image" width="400" height="222" alt="A home studio running Ableton Live">
+      </div> <!-- close #content -->
+
+      <hr>
+
+      <div id="footer">
+        <p class="nobg"><a href="../index.html" id="footlink">Assignments Home</a></p>
+      </div> <!-- close #footer -->
+    </div> <!-- close #container -->
+
+    <script src="scripts/jquery-1.12.3.min.js"></script>
+    <script src="scripts/retina.min.js"></script>
+    <script src="scripts/yt-script.js"></script>
+  </body>
+</html>

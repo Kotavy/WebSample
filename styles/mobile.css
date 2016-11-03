@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* CSS3 Web Fonts */
+
+@font-face {
+  font-family: Sunrise;
+  src:
+    url('fonts/blackout_sunrise-webfont.ttf'),
+    url('fonts/blackout_sunrise-webfont.svg'),
+    url('fonts/blackout_sunrise-webfont.woff'),
+    url('fonts/blackout_sunrise-webfont.eot');
+}
+
+@font-face {
+  font-family: Midnight;
+  src:
+    url('fonts/blackout_midnight-webfont.ttf'),
+    url('fonts/blackout_midnight-webfont.svg'),
+    url('fonts/blackout_midnight-webfont.woff'),
+    url('fonts/blackout_midnight-webfont.eot');
+}
+
+@font-face {
+  font-family: Raleway;
+  src:
+    url('fonts/raleway_thin-webfont.ttf'),
+    url('fonts/raleway_thin-webfont.svg'),
+    url('fonts/raleway_thin-webfont.woff'),
+    url('fonts/raleway_thin-webfont.eot');
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#447788+0,88ccbb+100 */
+background: #447788; /* Old browsers */
+background: -moz-linear-gradient(top,  #447788 0%, #88ccbb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #447788 0%,#88ccbb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #447788 0%,#88ccbb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#447788', endColorstr='#88ccbb',GradientType=0 ); /* IE6-9 */
+}
+
+#container {
+  width: 100%;
+  padding-top: 80px;
+}
+
+/* Navigation */
+
+#nav {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#88ccbb+0,447788+100 */
+  background: #88ccbb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #88ccbb 0%, #447788 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #88ccbb 0%,#447788 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #88ccbb 0%,#447788 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88ccbb', endColorstr='#447788',GradientType=0 ); /* IE6-9 */
+
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  position: relative;
+}
+
+li {
+  font-family: Sunrise, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-shadow: 0px 1px 1.5px #444444; /* Nice neon sign effect */
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+#theme {
+  position: relative;
+}
+
+.theme {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.9em;
+  display: inline-table;
+}
+
+/* Main Content */
+
+#content {
+  clear: both;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Text */
+
+h1 {
+  font-family: Midnight, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-shadow: -1px 0.5px 0px #444444; /* Nice neon sign effect */
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+}
+
+h2, h3 {
+  color: lightgrey;
+  font-family: Midnight, sans-serif;;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-shadow: 0px 0px 5px black;
+  margin: 0px;
+  margin-bottom: -10px;
+  padding: 0px;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+p {
+  background-color: white;
+  color: black;
+  font-family: Raleway, arial;
+  font-weight: normal;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.nobg {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+/* Columns */
+
+.col1 {
+  width: 100%;
+  position: relative;
+  z-index: 300;
+}
+
+.col2 {
+  width: 100%;
+  position: relative;
+  z-index: 200;
+}
+
+/* Images */
+
+.project_image {
+  border: 2.5px solid #444444;
+  width: 100%;
+  height: auto;
+  margin-bottom: 7px;
+}
+
+.wide_image {
+  clear: both;
+  display: block;
+  border: 2.5px solid #444444;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+hr {
+  clear: both;
+  margin: 0.3em;
+  margin-top: 10px;
+  border-style: inset;
+  border-width: 0px;
+  height: 2px;
+  background: #444444;
+}
+
+#footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding-top: 2px;
+  padding-bottom: 12px;
+}
+
+/* Link States */ /* NOTE: hover must come after link and visited, and active must come after hover. */
+
+a {
+  position: relative; /* plus a:active's "top: 1px;" produces a 'button' */
+}
+
+#footlink:link, #footlink:visited {
+  color: black;
+}
+
+a:link, a:visited {
+  color: #447788;
+  text-decoration: none;
+}
+
+a:focus, a:hover, #footlink:focus, #footlink:hover {
+  color: lightgrey;
+}
+
+a:active, #footlink:active {
+  color: yellow;
+  top: 1.2px;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #447788;
+  font-family: Midnight, Helvetica, sans-serif;
+  font-weight: bold;
+}

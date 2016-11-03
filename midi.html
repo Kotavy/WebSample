@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <h1><a href="index.html">Youth Theory</a></h1>
+        <ul>
+          <li><a href="midi.html">MIDI</a></li>
+          <li><a href="synths.html">Synths</a></li>
+          <li><a href="noises.html">Noises</a></li>
+        </ul>
+
+        <div id="theme">
+          <ul>
+            <li class="theme day"><button>Day</button></li>
+            <li class="theme">|</li>
+            <li class="theme night"><button>Night</button></li>
+          </ul>
+        </div> <!-- close #theme -->
+      </div> <!-- close #nav -->
+
+      <div id="content">
+        <div class="col1">
+          <img src="images/midi.png" class="project_image" width="300" height="300" alt="MIDI controller interfaceing with a DAW">
+          <h2>Let's Talk</h2>
+          <p>MIDI is a communications protocol, mainly for music. This means that MIDI data is just that: data, it makes no noise. It sends performance instructions such as pitch and velocity from a controller or keyboard into a DAW (Digital Audio Workstation) to be processed and turned into sound. It can also be routed to lighting systems in sync, to make for a more enveloping performance. MIDI protocol was first published in 1982.</p>
+        </div> <!-- close .col1 -->
+
+        <div class="col2">
+          <img src="images/controllers.png" class="project_image" width="300" height="300" alt="KORG Nano MIDI controllers">
+          <h2>Controllers</h2>
+          <p>Seen above are KORG's Nano controllers. They're powered direct by USB inputs from a computer and can affect just about any parameter inside the DAW. Controllers feature many different input options, including typical keyboard-style notes, pressure sensitive pads, knobs, and sliders. Periphers such as MIDI drums and clarinets even exist! The sheer variety allows for unlimited live performance possiblities.</p>
+        </div> <!-- close .col2 -->
+
+        <img src="images/slowmagic.png" class="wide_image" width="400" height="300" alt="Slow Magic performing at Electric Forest">
+      </div> <!-- close #content -->
+
+      <hr>
+
+      <div id="footer">
+        <p class="nobg"><a href="../index.html" id="footlink">Assignments Home</a></p>
+      </div> <!-- close #footer -->
+    </div> <!-- close #container -->
+
+    <script src="scripts/jquery-1.12.3.min.js"></script>
+    <script src="scripts/retina.min.js"></script>
+    <script src="scripts/yt-script.js"></script>
+  </body>
+</html>

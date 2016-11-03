@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="nav">
+        <h1><a href="index.html">Youth Theory</a></h1>
+        <ul>
+          <li><a href="midi.html">MIDI</a></li>
+          <li><a href="synths.html">Synths</a></li>
+          <li><a href="noises.html">Noises</a></li>
+        </ul>
+
+        <div id="theme">
+          <ul>
+            <li class="theme day"><button>Day</button></li>
+            <li class="theme">|</li>
+            <li class="theme night"><button>Night</button></li>
+          </ul>
+        </div> <!-- close #theme -->
+      </div> <!-- close #nav -->
+
+      <div id="content">
+        <div class="col1">
+          <a href="https://www.soundcloud.com/youththeory"><img id='music' src="images/soundcloud.png" class="project_image" width="300" height="300" alt="The Youth Theory Soundcloud page"></a>
+          <h2>The Project</h2>
+          <p id='go'>Youth Theory is a concept I've been building upon since I first began dabbling with computer music software back in my middle school years. It wasn't until I graduated high school and went to my first music festival that I decided to really invest towards learning how to make my own music. At present, it is whatever I can craft into presentable noises that are sometimes pleasant to listen to. The driving force behind Youth Theory is all the memories I have from growing up to a soundtrack of these crazy new electronic sounds--sounds that have come to be a defining feature of my generation. I reflect on how this music has shaped my life while I continue to learn how to translate these ideas into audible ambrosia.</p>
+        </div> <!-- close .col1 -->
+
+        <div class="col2">
+          <img src="images/headphones.png" class="project_image" width="300" height="300" alt="Sony MRD-7506 Headphones">
+          <h2>NYU</h2>
+          <p>While I'm still unsure how central a role being a musician will play in the greater scope of my life, I can certainl feel the passion behind it. Among the seemingly limitless opportunities at this university are courses taught by the folks who have been keeping up with this style of making music since the beginning. By taking classes on synthesis basics and the inner-workings of MIDI I'm focusing from the ground up to build the diverse set of skills necessary to make truly compelling electronic music. Despite my early exposure to the tools and ideas, I never managed to constructively teach myself music theory, DAW software, synth techniques, song arrangement, mixing, mastering, and everything else that goes into "making a beat." At NYU I can see the path and take the mix of classes that work for me to develop this hobby into something more."</p>
+        </div> <!-- close .col2 -->
+
+        <img src="images/live.png" class="wide_image" width="320" height="482" alt="Using the Launchpad with Ableton Live, B+W">
+      </div> <!-- close #content -->
+
+      <hr>
+
+      <div id="footer">
+        <p class="nobg"><a href="../index.html" id="footlink">Assignments Home</a></p>
+      </div> <!-- close #footer -->
+    </div> <!-- close #container -->
+
+    <script src="scripts/jquery-1.12.3.min.js"></script>
+    <script src="scripts/retina.min.js"></script>
+    <script src="scripts/yt-script.js"></script>
+  </body>
+</html>
